@@ -1,0 +1,56 @@
+<!-- landing_customer.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Selection</title>
+    <link rel="stylesheet" href="landing_customer.css">
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="header">
+        <div class="container">
+            <div class="logo">Your Logo</div>
+            <div class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="buttons">
+            <button onclick="redirectToCustomerOrder()">Choose a Meal</button>
+            <button onclick="showCustomizeMealForm()">Customize Meal</button>
+        </div>
+        <div id="chooseMealForm" class="meal-form">
+            <!-- Form for choosing a meal -->
+            <div class="form-container">
+                <form>
+                    <label for="vegNonVeg">Veg/Non-Veg:</label>
+                    <select id="vegNonVeg" name="vegNonVeg">
+                        <option value="veg">Veg</option>
+                        <option value="nonveg">Non-Veg</option>
+                    </select>
+                    <label for="cuisine">Cuisine:</label>
+                    <input type="text" id="cuisine" name="cuisine">
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" name="location">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        
+        <div id="customizeMealForm" class="meal-form">
+            <!-- Form for customizing a meal -->
+            <div class="form-container">
+                <!-- Your form elements for customizing a meal -->
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="landing_customer.js"></script>
+</body>
+</html>
